@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Griffy&family=Passion+One:wght@400;700;900&family=Pirata+One&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide or die wax</title>
+    <style>
+        * {
+            box-sizing: content-box;
+
+        }
+
+        .resolucion {
+            width: 100px;
+            height: auto;
+
+        }
+
+        @media (max-width: 767px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+        @media (min-width: 991px) {
+            .deskshop {
+                display: block;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+        .header {
+            background-color: #000;
+            color: rgb(255, 0, 170);
+            height: 100%;
+            width: 100%;
+            font-size:xx-large;
+            text-align:justify;
+            font-family: "Passion One", sans-serif;
+            font-weight: 400px;
+            font-style: normal;
+
+
+
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: #000;
+            color: orange;
+            height: 100%;
+            width: 100%;
+            font-size:x-large;
+            text-align:justify;
+            font-family: "Passion One", sans-serif;
+            font-weight: 400px;
+            font-style: normal;
+          
+        
+
+
+
+
+
+
+
+
+
+        }
+
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            margin-top:0%;
+
+        }
+
+        div.img {
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            text-align: initial;
+            margin: 0%;
+            padding: 0%;
+
+
+
+        }
+
+        .logo {
+            display:grid;
+            width: 80px;
+            height: 100px;
+            margin-right: 80%;
+            border-radius: 60%;
+            position:fixed;
+            margin-left: 80%;
+            text-align: center;
+        
+
+
+            
+            
+
+
+
+
+        }
+
+        .titulo {
+
+        
+            font-size: larger color:black;
+
+ 
+            font-weight: 90px;
+            font-size: 30px;
+            position: fullscreen;
+            
+    top: 25%;
+            width: 100%;
+            left: 60px;
+            text-shadow: 2px 2px 2px #000000;
+            text-align:checked
+            margin-right: 39%;
+
+
+
+
+
+
+
+        }
+        
+
+
+
+
+
+        .description {
+            background-color: hsl(22, 71%, 58%);
+            padding: 15px;
+            font: size 25px;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-family: "Bona Nova", sans-serif;
+            color: black;
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 1cap;
+        }
+
+        .gallery :hover {
+            transition: all 2s;
+            transform: scale(1.4);
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 480px;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+
+        .precios {
+
+            font-size: 14px;
+            margin-top: 20px;
+            background-color: hsl(22, 71%, 58%);
+            text-align: center;
+            color: black;
+            text-decoration: black;
+            padding: 10px 0;
+        }
+
+        .form-container {
+
+            MARGIN: 50PX AUTO;
+            background: hsl(22, 71%, 58%);
+            /* Fondo blanco semitransparente */
+            backdrop-filter: blur(10px);
+            /* Efecto de desenfoque */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            /* Sombra para darle profundidad */
+            max-width: 400px;
+            width: 200PX;
+            height: 350PX;
+            color: black;
+            object-fit: cover
+        }
+
+        .form-container h2 {
+            font-family:
+                font-size: 35px;
+
+
+        }
+
+        /* Estilos para el formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+
+
+        .footer {
+            font-size: 14px;
+            margin-top: 20px;
+            background-color: hsl(22, 71%, 58%);
+            text-align: center;
+            color: black;
+            text-decoration: black;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+            height: 30px;
+            width: 20px;
+        
+
+        }
+        .footer img {
+
+            height: 70px;px;
+           width:120px ;
+            display:inline-block;
+            border-radius:15%;
+            color: black;
+            font-family:
+
+            
+
+
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resolucion">
+        <div class="deskshop"></div>
+        <div class="tablet"></div>
+        <div class="movil"></div>
+    </div>
+    <div class="header">
+
+
+    </div>
+
+    <div class="container">
+        <div class="titulo"></div>
+        <!-- Logo y Título -->
+       <div class="img">
+            <h1>Slide or die wax</h1>
+            <img src="fotos/logo.jpg" alt="Logo de La Barbería" class="logo">
+
+            <img src="fotos/Mata SOD.jpeg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Descripción -->
+            <div class="description">
+                
+                <h4>
+                    Fabricamos la mejor cera para la práctica del skateboarding, nosotros patinamos y sabemos lo que
+                    necesitas.
+                    De Skaters para Skaters.
+
+                </h4>
+
+            </div>
+
+            <!-- Galería de Imágenes -->
+            <div class="gallery">
+                <img src="fotos/bombones.jpg" alt="foto1">
+                <img src="fotos/Fish Head.jpeg" alt=foto2">
+                <img src="fotos/halloween.jpg" alt=foto3">
+                <img src="fotos/estrellas polares.jpg" alt="foto4">
+                <img src="fotos/lego.jpeg" alt="foto5">
+                <img src="fotos/osos mantecosos.jpeg" alt="foto6">
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="precios">
+
+            <h2>Tenemos los mejores precios del merado contactate con nosotros para hacer tu pedido. Envios a todo el
+                pais.</h2>
+
+        </div>
+
+
+
+
+
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mldepvkv" method="POST">
+
+                <input name="nombre" type="text" placeholder="Nombre" required>
+                <input name="correo" type="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+        <!-- Pie de página -->
+        <div class="footer">
+            
+            <h3>
+                Nuestras redes:
+                <a href="https://www.instagram.com/labarberia1969" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/search/top?q=la%20barberia%20196" target="_blank">Facebook</a>
+                <h3>Medios de pago<h3>
+                
+                <img src="fotos/mp.jfif">
+                <img src="fotos/efete.png">
+            </p>
+            <p>Todos los derechos reservados RyC Programación</p>
+    
+
+        </div>
+    </div>
+</body>
+
+</html>
